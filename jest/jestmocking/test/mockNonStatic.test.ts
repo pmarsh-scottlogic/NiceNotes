@@ -1,3 +1,5 @@
+import { jest, it, expect } from "@jest/globals";
+
 import { greet } from "../src/meetAndGreet";
 
 const mockGreet = jest.fn();

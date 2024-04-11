@@ -1,3 +1,5 @@
+import { jest, it, expect } from "@jest/globals";
+
 import { Greeter } from "../src/classes/Greeter";
 import { wave } from "../src/meetAndGreet";
 
