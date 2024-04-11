@@ -10,8 +10,8 @@ So what’s the solution?
 
 The two ways you will learn are:
 
--   `useState()` React hook.
--   **Redux** (toolkit).
+- `useState()` React hook.
+- **Redux** (toolkit).
 
 ---
 
@@ -53,7 +53,7 @@ You can, however pass the data through to child components via [props](https://w
 
 Also note that you can call `useState()` as many times as you like in one component! Each bit of data that you want to save in the state should have its own call to `useState()`.
 
-## In context
+### In context
 
 _CountComponent.jsx_
 
@@ -84,7 +84,7 @@ Redux on its own is quite complicated and involves a lot of boilerplate code. So
 
 ## **Redux Toolkit**
 
-## Set up the slice
+### Set up the slice
 
 To begin, we create a slice.
 
@@ -128,10 +128,10 @@ Again, we have some strange syntax.
 
 After the colon, we define the function using [arrow notation](https://www.w3schools.com/js/js_arrow_function.asp). The reducer almost always takes these parameters:
 
--   `state` allows us to modify data in the store through the `state`'s properties.
--   `action` allows us to recieve arguments into the reducer through action.payload.
+- `state` allows us to modify data in the store through the `state`'s properties.
+- `action` allows us to recieve arguments into the reducer through action.payload.
 
-## Set up the store
+### Set up the store
 
 _storeConfig.js_
 
@@ -221,16 +221,16 @@ root.render(
 
 # Summary
 
-`useState()` and Redux and two ways to manage state in a react front end.
+`useState()` and Redux are two ways to manage state in a react front end.
 
 `useState()`
 
--   Simple and straightforward.
--   One **hook** that is used in component code.
--   Makes persistent variables accessible by one component only.
+- Simple and straightforward.
+- One **hook** that is used in component code.
+- Makes persistent variables accessible by one component only.
 
 Redux:
 
--   More difficult to set up, but more powerful.
--   Uses **slices** of the **store** to organise data, as well as **selectors** and **reducers** to retrieve and modify data.
--   The store is accessible to all components.
+- More difficult to set up, but more powerful.
+- Uses **slices** of the **store** to organise data, as well as **selectors** and **reducers** to retrieve and modify data.
+- The store is accessible to all components.
